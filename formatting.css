@@ -1,0 +1,228 @@
+body {
+  background-color: #FFF5E0;
+}
+
+/* Sets a Universal text color*/
+p, h1, h2, ol, ul {
+  color: #141E46;
+  text-align: left;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif; 
+}
+
+footer {
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-inline-start: 10px;
+}
+
+/* Affects Header and Image */
+
+.header {
+  background-color: #ff696966;
+  
+
+  padding-left: 100px;
+  padding-right: 100px;
+  background-clip: padding-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+/* Website Responsiveness */
+@media screen and (max-width: 800px) {
+  .header, .content, .recipeList {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
+.headerImg{
+    height: 400px;
+    width: auto;
+}
+
+.headerText {
+    p, h1 {
+    color: #c70038;
+    font-family: "Gill Sans MT";
+  }
+    h1{
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+}
+
+/* menu */
+
+/* non logo CSS*/
+.menu {
+  background-color: white;
+  overflow: hidden;
+}
+.menu a {
+  float: left;
+  color: #141E46;
+  text-align: center;
+  text-decoration: none;
+
+  padding-left: 0px ;
+  padding-right: 10px;
+  padding-inline: 20px;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+.menu a.active {
+  text-decoration-line: underline;
+}
+
+/*logo font */
+.menu p.logo {
+    color:#C70039;
+    
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.menu a.logo:hover {
+  text-decoration: none;
+}
+
+.content {
+  
+  padding-left: 100px;
+  padding-left: 100px;
+  background-clip: padding-box;
+
+  display: flex;
+  justify-content:center;
+  column-gap: 20px;
+}
+
+.recipeList {
+
+  background-color:#ff696966;
+
+  padding-left: 100px;
+  padding-right: 100px;
+  background-clip: padding-box;
+
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.recipeImg {
+  height: 400px;
+    width: auto;
+}
+
+.blockquote {
+  padding-inline-start: 50px;
+  text-emphasis-style: initial;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+  font-size: xx-large;
+}
+
+.imgChef {
+  width: 300px;
+  height: auto;
+
+  border: #141E46;
+  border-width: 5px;
+  border-radius: 50px;
+  border-style: outset;
+
+}
+
+/* table */
+.qnaTable {
+table, th, td {
+  color: #141E46;
+  text-align: left;
+  border: 10px;
+  font-family: "Gill Sans MT";
+}
+ table {
+  width: 100%;
+  border-collapse: collapse;
+ }
+ td {
+  text-align: left;
+ }
+}
+
+/* animation */
+
+@keyframes pAnimate {
+  from {color:#FFF5E0; }
+  to {color: #141E46;}
+}
+.pAnimate {
+  animation-name: pAnimate;
+  animation-duration: 2s;
+}
+.pAnimation {
+  padding-inline-start: 20px;
+  padding-inline-end: 10px;
+}
+
+/* To fufill the assignment */
+
+@keyframes dogRotate {
+  0% {width: 10px}
+  50% {width: 350px;}
+  75% {width: 450px;}
+  100% {width: 10px;}
+}
+
+@keyframes textAnimate {
+  0% {
+    background-image: linear-gradient(to right, red, yellow);
+    border-style: dashed;
+    border-width: 10px;
+    border-color: blueviolet;
+  }
+  50% {
+    background-image: linear-gradient(to right, yellow, red);
+    border-width: 0px;
+  }
+  100% {
+    background-image: linear-gradient(to right, lightblue, red);
+    border-style:groove;
+    border-width: 10px;
+    border-color: blueviolet;
+  }
+}
+
+.textAnimate {
+
+  animation-name: textAnimate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.dogAnimate {
+  border-bottom-style: ridge;
+  border-bottom-color: burlywood;
+  border-bottom-width: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-spacing: 0px;
+  border-block-end: 0px;
+  border-block-start-width: 0px;
+  border-block-start-width: 0px;
+
+
+  animation-name: dogRotate;
+  animation-duration: 20s;
+  animation-delay: 200ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
